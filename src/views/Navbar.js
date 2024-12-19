@@ -9,12 +9,12 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-black rounded-full px-6 py-4 flex justify-between items-center shadow-lg max-w-screen-2xl  mx-2  mt-6">
+      <nav className="bg-black rounded-full  px-6 py-4 flex justify-between items-center shadow-lg max-w-screen-2xl  mx-2  mt-6">
         {/* Logo */}
-        <div className="flex items-center">
-          <div className="w-12 h-12 bg-[#facc15] rounded-full flex items-center justify-start pl-3 gap-4">
+        <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
+          <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
             <img src={signjoy} alt="Signjoy Logo" className="w-6 h-6" />
-            <span className="text-2xl md:text-3xl font-bold font-poppins text-[#facc15]">
+            <span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Signjoy
             </span>
           </div>
@@ -22,13 +22,13 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden lg:flex items-center gap-6 text-white font-light">
-          <li className="cursor-pointer py-2 px-4 hover:bg-yellow-400 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">How it works</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-yellow-400 hover:bg-yellow-400 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Benifits</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-yellow-400 hover:bg-yellow-400 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Services</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-yellow-400 hover:bg-yellow-400 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Pricing</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-yellow-400 hover:bg-yellow-400 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">FAQ</li>
+          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">How it works</li>
+          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Benifits</li>
+          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Services</li>
+          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Pricing</li>
+          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">FAQ</li>
           <li>
-            <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-yellow-400 hover:text-gray-900">
+            <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
               Book a call
             </button>
           </li>

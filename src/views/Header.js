@@ -7,7 +7,7 @@ const Header = () => {
       {/* Top Logo and Brand */}
       <div className="flex items-center justify-center gap-2 md:gap-2 mb-2">
         <img src={signjoy} alt="Signjoy Logo" className="w-12 h-12" />
-        </div>
+       </div>
 
       {/* Hero Section */}
       <div className="space-y-6">
