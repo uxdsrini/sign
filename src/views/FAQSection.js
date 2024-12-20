@@ -73,7 +73,7 @@ export default function FAQSection() {
 
   return (
 
-    <section className="min-h-screen bg-[#FAF9F6] w-full">
+    <section id='faq' className="min-h-screen bg-[#FAF9F6] w-full">
 
 <div className="max-w-3xl text-gray-900 mx-auto px-4 py-20">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">

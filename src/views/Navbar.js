@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import signjoy from '../assets/images/logo512.png';
 
 const Navbar = () => {
@@ -9,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-black rounded-full  px-6 py-4 flex justify-between items-center shadow-lg max-w-screen-2xl  mx-2  mt-6">
+      <nav className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
         {/* Logo */}
         <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
           <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
@@ -22,11 +23,56 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <ul className="hidden lg:flex items-center gap-6 text-white font-light">
-          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">How it works</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Benifits</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Services</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">Pricing</li>
-          <li className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">FAQ</li>
+          <li>
+            <Link
+              to="howitworks"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              How it works
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="benifits"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              Benefits
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="services"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="pricing"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="faq"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              FAQ
+            </Link>
+          </li>
           <li>
             <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
               Book a call
@@ -37,7 +83,6 @@ const Navbar = () => {
         {/* Hamburger Menu */}
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-            {/* Hamburger Icon */}
             <svg
               className="w-8 h-8"
               fill="none"
@@ -58,11 +103,10 @@ const Navbar = () => {
 
       {/* Slide-in Mobile Menu */}
       <div
-  className={`fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ${
-    isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-  }`}
->
-        {/* Close Button */}
+        className={`fixed top-0 right-0 w-3/4 h-full bg-white shadow-lg z-50 transform transition-transform duration-300 ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
         <div className="flex justify-end p-4">
           <button onClick={toggleMenu} className="text-gray-700">
             <svg
@@ -82,12 +126,27 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Navigation Links */}
         <ul className="flex flex-col items-start gap-6 px-6 text-gray-900 text-lg font-medium">
-          <li className="cursor-pointer">How it works</li>
-          <li className="cursor-pointer">Features</li>
-          <li className="cursor-pointer">Pricing</li>
-          <li className="cursor-pointer">FAQ</li>
+          <li>
+            <Link to="howitworks" smooth={true} duration={500} onClick={toggleMenu}>
+              How it works
+            </Link>
+          </li>
+          <li>
+            <Link to="benifits" smooth={true} duration={500} onClick={toggleMenu}>
+              Features
+            </Link>
+          </li>
+          <li>
+            <Link to="pricing" smooth={true} duration={500} onClick={toggleMenu}>
+              Pricing
+            </Link>
+          </li>
+          <li>
+            <Link to="faq" smooth={true} duration={500} onClick={toggleMenu}>
+              FAQ
+            </Link>
+          </li>
           <li>
             <button className="bg-black text-white px-6 py-2 rounded-full">
               Book a call
