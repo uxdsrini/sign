@@ -7,7 +7,7 @@ import { Check } from 'lucide-react'
 
 export default function PricingSection() {
   return (
-    <div id='pricing' className="min-h-screen  p-24 flex items-center justify-center">
+    <div id='pricing' className="min-h-screen mt-24 mb-24 flex items-center justify-center">
       <div className="w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Left Column - Join Card */}
         <Card className="bg-black text-white p-8 rounded-3xl relative overflow-hidden">
