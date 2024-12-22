@@ -66,7 +66,7 @@ export default function PricingSection() {
                 "Design resources charged separately",
                 "Pause or cancel anytime"
               ].map((feature) => (
-                <div key={feature} className="flex items-center gap-2">
+                <div key={feature} className="flex items-center text-left gap-2">
                   <Check className="h-5 w-5 text-green-500" />
                   <span>{feature}</span>
                 </div>
@@ -75,9 +75,9 @@ export default function PricingSection() {
           </div>
 
           <div className="flex items-center gap-4 mx-auto justify-center">
-            <Button size="lg" className="bg-yellow-500 text-white rounded-xl">
+            <span size="lg" className="bg-yellow-500 px-8 py-4 text-white rounded-xl hover:bg-black">
               Get started
-            </Button>
+            </span>
           </div>
         </div>
       </div>
