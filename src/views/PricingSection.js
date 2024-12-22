@@ -7,7 +7,7 @@ import { Check } from 'lucide-react'
 
 export default function PricingSection() {
   return (
-    <div id='pricing' className="min-h-screen mt-24 mb-24 flex items-center justify-center">
+    <div id='pricing' className="min-h-screen mt-24 mb-24 md:px-20 flex items-center justify-center mx-2 md:mx-0">
       <div className="w-full max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         {/* Left Column - Join Card */}
         <Card className="bg-black text-white p-8 rounded-3xl relative overflow-hidden">
@@ -21,7 +21,7 @@ export default function PricingSection() {
           </h2>
           <div className="relative mt-auto">
             <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-            <a href='#'><h3 className="text-xl font-semibold mb-2">
+              <a href='#'><h3 className="text-xl font-semibold mb-2">
                 Book a 15-min intro call
               </h3> 
               <p className="text-gray-400 mb-4">
@@ -37,7 +37,7 @@ export default function PricingSection() {
         </Card>
 
         {/* Right Column - Pricing Details */}
-        <div className="space-y-8 bg-pattern px-4 py-6 rounded-3xl drop-shadow-2xl">
+        <div className="space-y-8 bg-pattern px-4 py-6 rounded-3xl">
           <h1 className="text-4xl font-bold text-black">Membership</h1>
           <div className="inline-flex items-center bg-black/5 rounded-full p-1">
             <div className="rounded-full px-6 py-2 bg-black text-white">

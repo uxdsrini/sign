@@ -8,9 +8,9 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#000] mx-2 text-white py-24 px-12 justify-between max-w-7xl lg:mx-auto rounded-3xl relative">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col items-start md:items-center justify-between gap-8">
+    <footer className="bg-black text-white p-12 mx-2 justify-between max-w-7xl lg:mx-auto rounded-3xl relative">
+      <div className="mx-auto px-4">
+        <div className="flex flex-col items-start md:items-center justify-between gap-8 mx-auto">
           {/* Logo and Company Name */}
           <div className="flex flex-col items-center mx-auto">
             <span className="flex items-center justify-center gap-2 md:gap-2 mb-2">
@@ -33,8 +33,8 @@ export default function Footer() {
           </div>
 
           {/* Navigation Links */}
-          <nav className="flex md:flex-row gap-4 md:gap-8">
-            <ul className="hidden lg:flex items-center gap-6 text-white font-light">
+          <nav className="flex justify-center mx-auto">
+            <ul className="flex flex-col lg:flex-row items-center text-white font-light space-y-4 lg:space-y-0 lg:space-x-6">
               <li>
                 <Link
                   to="howitworks"
@@ -94,7 +94,7 @@ export default function Footer() {
           </nav>
 
           {/* Social Media Section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 mx-auto">
             <h3 className="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Follow Us
             </h3>
@@ -128,7 +128,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://behance.net"
-                className="p-2 rounded-full w-12 h-12 hover:text-yellow-600"
+                className="p-2 rounded-full hover:text-yellow-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >

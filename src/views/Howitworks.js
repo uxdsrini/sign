@@ -37,7 +37,7 @@ export default function HowItWorks() {
     ]
   
     return (
-      <section  className="max-w-7xl mx-auto px-4 py-24">
+      <section  className="max-w-7xl mx-auto px-2 py-24">
         <div id='howitworks' className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-gray-900">
           We didn’t reinvent the wheel—just the way design works.
