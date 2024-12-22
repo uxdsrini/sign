@@ -44,11 +44,11 @@ const FeatureGrid = () => {
         
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-1.5">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-1.5 max-w-7xl mx-auto ">
         {features.map((feature, index) => (
           <div
             key={index}
-            className=" text-gray-900 shadow-md rounded-lg p-24 text-center flex flex-col items-center bg-gradient-to-r from-purple-500 to-pink-500"
+            className=" text-gray-900 hover:shadow-xl hover:shadow-gray-500 rounded-lg p-24 text-center flex flex-col items-center bg-gradient-to-r from-purple-500 to-pink-500"
           >
             <div className="text-4xl">{feature.icon}</div>
             <h3 className="text-white font-semibold mb-2 text-lg font-medium">{feature.title}</h3>

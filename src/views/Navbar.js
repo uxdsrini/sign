@@ -10,14 +10,19 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
+      <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
         {/* Logo */}
         <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
           <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
-            <img src={signjoy} alt="Signjoy Logo" className="w-6 h-6" />
-            <span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+          <img src={signjoy} alt="Signjoy Logo" className="w-6 h-6" />
+          <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer"
+            ><span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Signjoy
-            </span>
+            </span></Link>
           </div>
         </div>
 
@@ -147,11 +152,11 @@ const Navbar = () => {
               FAQ
             </Link>
           </li>
-          <li>
-            <button className="bg-black text-white px-6 py-2 rounded-full">
-              Book a call
+          <a href='#'></a><li>
+          <button className="bg-black text-white px-6 py-2 rounded-full">
+          Book a call
             </button>
-          </li>
+          </li><a/>
         </ul>
       </div>
 

@@ -9,6 +9,9 @@ import ScrollBar from './views/ScrollBar';
 import FAQSection from './views/FAQSection';
 import SocialProfile from './views/Social';
 import Benifits from './views/FeatureGrid';
+import CtaSection from './views/CtaSection';
+import PricingSection from './views/PricingSection';
+import Footer from './views/Footer.js';
 
 function App() {
   return (
@@ -20,8 +23,11 @@ function App() {
       <SocialProfile />
       <HowItWorks />
       <Benifits />
+      <PricingSection />
       <Services />
+      <CtaSection />
       <FAQSection />
+      <Footer />
       <footer className="py-6 md:py-0">
         <div className="container flex flex-col mx-auto items-center justify-center gap-4 md:h-24 md:flex-row text-gray-900">
           <p className="text-sm text-gray-400 font-light">

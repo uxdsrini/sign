@@ -37,7 +37,7 @@ export default function HowItWorks() {
     ]
   
     return (
-      <section  className="max-w-7xl mx-auto px-4 py-20">
+      <section  className="max-w-7xl mx-auto px-4 py-24">
         <div id='howitworks' className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-gray-900">
           We didn’t reinvent the wheel—just the way design works.
@@ -48,13 +48,13 @@ export default function HowItWorks() {
           </div>
         </div>
   
-        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto ">
           {steps.map((step, index) => (
-            <div key={index} className="flex text-gray-900 flex-col items-center text-center border-orange-200 rounded-3xl border-solid border-2 px-4 py-4 border-dotted">
+            <div key={index} className="flex text-gray-900 flex-col items-center text-center border-orange-200 rounded-3xl hover:border-solid border-2 px-4 py-4 border-dotted hover:shadow-xl hover:shadow-gray-200">
               <div className="mb-6">
                 {step.icon}
               </div>
-              <p className="text-xl md:text-2xl max-w-[250px]">
+              <p className="text-md md:text-md max-w-[250px]">
                 {step.text}
               </p>
             </div>

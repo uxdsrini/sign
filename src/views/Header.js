@@ -1,5 +1,6 @@
 import React from 'react';
 import signjoy from '../assets/images/logo512.png';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
@@ -18,9 +19,17 @@ const Header = () => {
         <p className="text-lg md:text-xl text-gray-600">
           Design subscriptions for everyone. Pause or cancel anytime.
         </p>
-        <button className="mt-4 bg-black text-white px-6 py-2 rounded-md text-lg hover:bg-gray-800 transition">
-          See plans
+        <Link
+              to="pricing"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4"
+            >
+              <button className="mt-4 bg-black text-white px-6 py-2 rounded-md text-lg hover:bg-gray-800 transition">
+          <a href=''></a>See plans
         </button>
+            </Link>
+        
         <div className="flex items-center justify-center gap-2 text-sm text-gray-700 mt-4">
           <span className="w-2 h-2 bg-green-600 rounded-full"></span>
           <span>Available now</span>

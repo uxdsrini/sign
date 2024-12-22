@@ -86,7 +86,7 @@ export default function FAQSection() {
               value={`item-${index}`}
               className="border-none"
             >
-              <AccordionTrigger className="flex justify-between py-4 text-sm font-medium hover:no-underline">
+              <AccordionTrigger className="flex text-left justify-between py-4 text-sm font-medium hover:no-underline">
                 {faq.question}
                 <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />
               </AccordionTrigger>
