@@ -19,11 +19,7 @@ function App() {
       <div className="overflow-x-hidden bg-gradient-to-r mx-auto from-blue-500 to-purple-600 bg-clip-text text-transparent">
       <Navbar />
       <Header />
-<<<<<<< HEAD
-      <ScrollBar />
-=======
       {/* <ScrollBar /> */}
->>>>>>> 5c328d0 (update_6)
       <SocialProfile />
       <HowItWorks />
       <Benifits />
