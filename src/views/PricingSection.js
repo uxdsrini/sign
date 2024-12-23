@@ -46,7 +46,11 @@ export default function PricingSection() {
           </div>
 
           <div>
+<<<<<<< HEAD
             <div className="text-4xl font-bold text-black">$1,800<span className="text-xl font-normal">/m</span></div>
+=======
+            <div className="text-4xl font-bold text-black">$1,800<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">$3600</span><span className="text-xl font-normal">/m</span></div>
+>>>>>>> 5c328d0 (update_6)
             <p className="text-muted-foreground mt-2 text-black">
               Double the requests. Pause or cancel anytime.
             </p>
