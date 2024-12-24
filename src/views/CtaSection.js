@@ -18,7 +18,7 @@ export default function CTASection() {
             className="text-lg font-medium text-gray-900 group"
             asChild
           >
-            <a href="#" className="flex items-center gap-2">
+            <a href="https://calendar.app.google/Uxfa6cdV1BJ48J5m6" className="flex items-center gap-2">
               Book A Call
               <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
             </a>
