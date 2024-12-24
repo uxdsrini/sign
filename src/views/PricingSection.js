@@ -75,9 +75,10 @@ export default function PricingSection() {
           </div>
 
           <div className="flex items-center gap-4 mx-auto justify-center">
-            <span size="lg" className="bg-yellow-500 px-8 py-4 text-white rounded-xl hover:bg-black">
+          <a href="https://bsrin6.myinstamojo.com/product/signjoy-design-subscription/" data-store-name="bsrin6" data-domain="https://bsrin6.myinstamojo.com" data-id="5965530" rel="im-new-checkout" data-text="Pay" data-css-style="background:#75c26a; color:#ffffff; width:300px; border-radius:30px"   data-layout="vertical"  ><span size="lg" className="bg-yellow-500 px-8 py-4 text-white rounded-xl hover:bg-black">
               Get started
-            </span>
+            </span></a>
+           <script src="https://manage.instamojo.com/assets/js/pay_button/button.min.js"></script>
           </div>
         </div>
       </div>
