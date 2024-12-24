@@ -21,7 +21,7 @@ export default function ScrollingText() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const text = "Happy New Year 2025 * 50% OFF on 01/01/2025 Subscribers Offer till IST 12PM * ";
+  const text = " Happy New Year 2025 * 50% OFF * ";
   // Repeat the text to ensure smooth scrolling
   const repeatedText = Array(20).fill(text).join('');
 

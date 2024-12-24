@@ -78,10 +78,10 @@ const Navbar = () => {
               FAQ
             </Link>
           </li>
-          <li>
-            <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
+          <li><a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank">
+          <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
               Book a call
-            </button>
+            </button></a>
           </li>
         </ul>
 
@@ -152,11 +152,11 @@ const Navbar = () => {
               FAQ
             </Link>
           </li>
-          <a href='#'></a><li>
-          <button className="bg-black text-white px-6 py-2 rounded-full">
+          <li>
+          <a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank"><button className="bg-black text-white px-6 py-2 rounded-full">
           Book a call
-            </button>
-          </li><a/>
+            </button></a>
+          </li>
         </ul>
       </div>
 

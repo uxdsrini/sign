@@ -85,10 +85,10 @@ export default function Footer() {
                   FAQ
                 </Link>
               </li>
-              <li>
+              <li><a href="https://calendar.app.google/Uxfa6cdV1BJ48J5m6" target="_blank">
                 <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
                   Book a call
-                </button>
+                </button></a>
               </li>
             </ul>
           </nav>

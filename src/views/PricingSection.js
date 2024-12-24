@@ -21,7 +21,7 @@ export default function PricingSection() {
           </h2>
           <div className="relative mt-auto">
             <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-              <a href='#'><h3 className="text-xl font-semibold mb-2">
+              <a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank"><h3 className="text-xl font-semibold mb-2">
                 Book a 15-min intro call
               </h3> 
               <p className="text-gray-400 mb-4">

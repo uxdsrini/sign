@@ -15,3 +15,4 @@ firebase.initializeApp(firebaseConfig);
 
 const firestore = firebase.firestore();
 export { firestore };
+
