@@ -109,7 +109,7 @@ export default function Footer() {
                 <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61571548252136"
                 className="p-2 rounded-full hover:text-yellow-600"
                 target="_blank"
                 rel="noopener noreferrer"

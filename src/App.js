@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 import './App.css';
 import Header from './views/Header';
 import Navbar from './views/Navbar';
@@ -12,6 +14,7 @@ import Benifits from './views/FeatureGrid';
 import CtaSection from './views/CtaSection';
 import PricingSection from './views/PricingSection';
 import Footer from './views/Footer.js';
+import Term from './views/Term.js';
 
 function App() {
   return (
@@ -28,12 +31,14 @@ function App() {
       <CtaSection />
       <FAQSection />
       <Footer />
-      <footer className="py-6 md:py-0">
+      <Term/>
+            <footer className="py-6 md:py-0">
         <div className="container flex flex-col mx-auto items-center justify-center gap-4 md:h-24 md:flex-row text-gray-900">
           <p className="text-sm text-gray-400 font-light">
            All rights reserved. © {new Date().getFullYear()} SignJoy
           </p>
         </div>
+        
       </footer>
       </div>
     </div>
