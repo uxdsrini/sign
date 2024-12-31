@@ -22,7 +22,7 @@ const PortfolioLinks = () => {
           <i className="fab fa-linkedin w-12 h-12 hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:rounded-full p-2"></i>
         </div>
         <span className="font-medium text-lg mt-2 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:text-gray-900 px-2"><a href='https://www.linkedin.com/in/srinivasbiskula/'>LinkedIn</a></span>
-        <span className="text-sm text-gray-400"><a href='https://www.linkedin.com/in/srinivasbiskula/'>See My Work</a></span>
+        <span className="text-sm text-gray-400"><a href='https://www.linkedin.com/in/signjoy/'>See My Work</a></span>
       </div>
       <div className="flex flex-col items-center text-center mt-6 mb-6">
         <div className="text-3xl">

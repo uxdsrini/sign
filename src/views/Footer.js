@@ -118,7 +118,7 @@ export default function Footer() {
                 <span className="sr-only">Facebook</span>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/signjoy/"
                 className="p-2 rounded-full hover:text-yellow-600"
                 target="_blank"
                 rel="noopener noreferrer"
