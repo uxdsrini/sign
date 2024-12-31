@@ -31,7 +31,7 @@ function App() {
       <CtaSection />
       <FAQSection />
       <Footer />
-      <Term/>
+      {/* <Term/> */}
             <footer className="py-6 md:py-0">
         <div className="container flex flex-col mx-auto items-center justify-center gap-4 md:h-24 md:flex-row text-gray-900">
           <p className="text-sm text-gray-400 font-light">
