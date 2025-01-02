@@ -5,7 +5,7 @@ import Button from './UI/button'; // Adjusted the casing to match the file name
 
 export default function CTASection() {
   return (
-<section className="w-full py-24 bg-gradient-to-b from-yellow-500 to-orange-600 mt-24">
+<section className="w-full py-24 bg-gradient-to-b from-yellow-500 to-orange-600">
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-medium tracking-tight text-white">

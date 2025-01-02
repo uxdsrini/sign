@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 
 import './App.css';
 import Header from './views/Header';
@@ -11,6 +9,7 @@ import ScrollBar from './views/ScrollBar';
 import FAQSection from './views/FAQSection';
 import SocialProfile from './views/Social';
 import Benifits from './views/FeatureGrid';
+import Sale from './views/Sale.js'
 import CtaSection from './views/CtaSection';
 import PricingSection from './views/PricingSection';
 import Footer from './views/Footer.js';
@@ -104,6 +103,7 @@ function App() {
         <Benifits />
         <PricingSection />
         <Services />
+        <Sale />
         <CtaSection />
         <FAQSection />
         <Footer />
