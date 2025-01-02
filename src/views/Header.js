@@ -26,7 +26,7 @@ const Header = () => {
               className="cursor-pointer py-2 px-4"
             >
               <button className="mt-4 bg-black text-white px-6 py-2 rounded-md text-lg hover:bg-gray-800 transition">
-          <a href="https://calendar.app.google/Uxfa6cdV1BJ48J5m6" target="_blank" rel="noreferrer">Valid Link</a>
+          <a href="https://calendar.app.google/Uxfa6cdV1BJ48J5m6" target="_blank" rel="noreferrer">See Plan</a>
         </button>
             </Link>
         
