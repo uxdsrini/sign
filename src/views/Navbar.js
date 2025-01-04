@@ -78,6 +78,16 @@ const Navbar = () => {
               FAQ
             </Link>
           </li>
+          <li>
+            <Link
+              to="shop"
+              smooth={true}
+              duration={500}
+              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+            >
+              Shop
+            </Link>
+          </li>
           <li><a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank" rel="noreferrer">
           <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
               Book a call
