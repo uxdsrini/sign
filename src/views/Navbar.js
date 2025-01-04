@@ -143,27 +143,32 @@ const Navbar = () => {
 
         <ul className="flex flex-col items-start gap-6 px-6 text-gray-900 text-lg font-medium">
           <li>
-            <Link to="howitworks" smooth={true} duration={500} onClick={toggleMenu}>
+            <Link to="howitworks" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
               How it works
             </Link>
           </li>
           <li>
-            <Link to="benifits" smooth={true} duration={500} onClick={toggleMenu}>
+            <Link to="benifits" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
               Features
             </Link>
           </li>
           <li>
-            <Link to="pricing" smooth={true} duration={500} onClick={toggleMenu}>
+            <Link to="pricing" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
               Pricing
             </Link>
           </li>
           <li>
-            <Link to="faq" smooth={true} duration={500} onClick={toggleMenu}>
+            <Link to="faq" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
               FAQ
             </Link>
           </li>
           <li>
-          <a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank" rel="noreferrer"><button className="bg-black text-white px-6 py-2 rounded-full">
+            <Link to="shop" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
+              Shop
+            </Link>
+          </li>
+          <li>
+          <a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank" rel="noreferrer"><button className="className='text-black px-4 py-2 rounded-full hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
           Book a call
             </button></a>
           </li>
