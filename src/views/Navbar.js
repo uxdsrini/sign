@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import signjoy from '../assets/images/logo512.png';
+import { Link as RouterLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // New state for dropdown
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
     <>
@@ -79,14 +83,24 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link
-              to="shop"
-              smooth={true}
-              duration={500}
-              className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
-            >
-              Shop
-            </Link>
+            <div className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+              >
+                Shop
+              </button>
+              {isDropdownOpen && (
+                <ul className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-40">
+                  <li>
+                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full">
+                      Link1
+                    </RouterLink>
+                  </li>
+                  {/* Add more dropdown links here if needed */}
+                </ul>
+              )}
+            </div>
           </li>
           <li><a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank" rel="noreferrer">
           <button className="bg-black text-white px-4 py-2 rounded-full border border-white hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
