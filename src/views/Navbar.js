@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
+      <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky">
         {/* Logo */}
         <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
           <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
@@ -86,18 +86,30 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={toggleDropdown}
-                className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+                className="flex cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
               >
-                Shop
+                Shop 
+                <span className='pt-1'><svg class="-mr-1 size-5 text-gray-900 hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg></span>
               </button>
               {isDropdownOpen && (
-                <ul className="absolute top-full left-0 bg-white shadow-lg rounded-md mt-2 py-2 w-40">
+                <ul className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                   <li>
-                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full">
+                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Link1
                     </RouterLink>
                   </li>
-                  {/* Add more dropdown links here if needed */}
+                  <li>
+                    <RouterLink to="/Link2" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Link2
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Link3
+                    </RouterLink>
+                  </li>
                 </ul>
               )}
             </div>
@@ -176,10 +188,38 @@ const Navbar = () => {
               FAQ
             </Link>
           </li>
+      
           <li>
-            <Link to="shop" smooth={true} duration={500} onClick={toggleMenu} className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900">
-              Shop
-            </Link>
+            <div className="relative">
+              <button
+                onClick={toggleDropdown}
+                className="flex cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
+              >
+                Shop
+                <span className='pt-1'><svg class="-mr-1 size-5 text-gray-900 hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+        <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+      </svg></span>
+              </button>
+              {isDropdownOpen && (
+                <ul className="absolute right-0 left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg">
+                  <li>
+                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Link1
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/Link2" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Link2
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Link3
+                    </RouterLink>
+                  </li>
+                </ul>
+              )}
+            </div>
           </li>
           <li>
           <a href='https://calendar.app.google/Uxfa6cdV1BJ48J5m6' target="_blank" rel="noreferrer"><button className="className='text-black px-4 py-2 rounded-full hover:bg-gradient-to-r from-yellow-500 to-yellow-600">
