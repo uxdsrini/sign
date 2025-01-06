@@ -95,7 +95,7 @@ export default function Footer() {
 
           {/* Social Media Section */}
           <div className="flex flex-col gap-4 mx-auto">
-            <h3 className="text-lg font-semibold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <h3 className="text-lg text-center font-semibold bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
               Follow Us
             </h3>
             <div className="flex gap-4">
