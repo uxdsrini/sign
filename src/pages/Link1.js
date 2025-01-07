@@ -62,9 +62,9 @@ function ServicesPage() {
                 <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
                   {service.icon}
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <h3 className="text-xl font-semibold mb-3 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 ">
                   {service.features.map((feature, fIndex) => (
                     <li key={fIndex} className="flex items-center text-sm text-gray-500">
                       <Icons.CheckCircle className="w-4 h-4 mr-2 text-green-500" />
