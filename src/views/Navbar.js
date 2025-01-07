@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky">
+      <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
         {/* Logo */}
         <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
           <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
@@ -90,7 +90,7 @@ const Navbar = () => {
                 className="flex cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
               >
                 Shop 
-                <span className='pt-1'><svg class="-mr-1 size-5 text-gray-900 hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+                <span className='pt-1'><svg class="-mr-1 size-5 text-black hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
         <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg></span>
               </button>

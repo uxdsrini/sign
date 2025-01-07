@@ -94,7 +94,7 @@ function App() {
               path="/"
               element={
                 <>
-                   <Navbar />
+                  <Navbar />
                   <Header />
                   <ScrollBar />
                   <SocialProfile />
