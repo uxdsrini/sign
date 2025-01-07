@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import signjoy from '../assets/images/logo512.png';
 import { Link as RouterLink } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -108,6 +109,11 @@ const Navbar = () => {
                   <li>
                     <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Link3
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/Servicespage" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Services
                     </RouterLink>
                   </li>
                 </ul>
