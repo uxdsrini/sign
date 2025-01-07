@@ -8,7 +8,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black text-white p-12 mx-2 justify-between max-w-7xl lg:mx-auto rounded-3xl relative">
+    <footer className="bg-black text-white p-12 mx-2 mx-4 justify-between rounded-3xl relative">
       <div className="mx-auto px-4">
         <div className="flex flex-col items-start md:items-center justify-between gap-8 mx-auto">
           {/* Logo and Company Name */}

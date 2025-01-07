@@ -97,8 +97,8 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <ul className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                   <li>
-                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link1
+                    <RouterLink to="/Services" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Services
                     </RouterLink>
                   </li>
                   <li>
@@ -109,11 +109,6 @@ const Navbar = () => {
                   <li>
                     <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Link3
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/Servicespage" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Services
                     </RouterLink>
                   </li>
                 </ul>
@@ -209,7 +204,7 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <ul className="absolute right-0 left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg">
                   <li>
-                    <RouterLink to="/Link1" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                    <RouterLink to="/services" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Link1
                     </RouterLink>
                   </li>

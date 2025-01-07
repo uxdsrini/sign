@@ -11,7 +11,7 @@ import SocialProfile from './views/Social';
 import Benifits from './views/FeatureGrid';
 import CtaSection from './views/CtaSection';
 import PricingSection from './views/PricingSection';
-import Link1 from './pages/Link1';
+import ServicePage from './pages/Services.js';
 import Footer from './views/Footer.js';
 
 // Navigation Component
@@ -31,11 +31,11 @@ const Navigation = () => {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                   <Link
-                    to="/link1"
+                    to="/servicepage"
                     className="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
                     onClick={() => setIsDropdownOpen(false)}
                   >
-                    Link 1
+                  
                   </Link>
                 </div>
               )}
@@ -89,7 +89,8 @@ function App() {
        
           <Navigation />
           <Routes>
-            <Route path="/link1" element={<Link1 />} />
+            <Route path="/services" element={<ServicePage />} />
+            
             <Route
               path="/"
               element={

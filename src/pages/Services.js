@@ -1,14 +1,15 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
-import Navbar from '../views/Navbar.js';
+import ServicesNav from '../views/ServicesNav.js';
 import Footer from '../views/Footer.js';
+import Header from '../views/Header.js';
       
                   
-function ServicesPage() {
+function ServicePage() {
   const services = [
     {
       icon: <Icons.Palette className="w-8 h-8 text-orange-500" />,
-      title: "Brand Identity",
+      title: "Band Identity",
       description: "Complete branding solutions including logo design, color palettes, typography, and brand guidelines that capture your unique identity.",
       features: ["Logo Design", "Brand Guidelines", "Color Schemes", "Typography Selection"]
     },
@@ -48,7 +49,8 @@ function ServicesPage() {
     
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Previous Hero Section remains unchanged */}
-      <Navbar />
+      <ServicesNav />
+      <Header />
       {/* Expanded Services Section */}
       <section className="px-4 py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -89,4 +91,4 @@ function ServicesPage() {
   );
 }
 
-export default ServicesPage;
+export default ServicePage;
