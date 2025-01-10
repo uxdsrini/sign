@@ -1,0 +1,20 @@
+/* @tailwind base; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+
+.overflow-x-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-x-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.bg-pattern {
+    background-image: url('./assets/images/pattern-bg.png');
+    background-repeat: repeat;
+}
