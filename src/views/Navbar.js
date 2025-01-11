@@ -97,23 +97,18 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <ul className="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                   <li>
-                    <RouterLink to="/Services" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Services
+                    <RouterLink to="/ServicesPage" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Services List
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="/Link2" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Blog
+                    <RouterLink to="/BlogDetails" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      BlogDetail
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Shop
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Books
+                    <RouterLink to="/BlogList" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      BlogList
                     </RouterLink>
                   </li>
                 </ul>
@@ -201,7 +196,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 className="flex cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
               >
-                Servicess
+                ServicesList
                 <span className='pt-1'><svg class="-mr-1 size-5 text-gray-900 hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
         <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg></span>
@@ -221,6 +216,16 @@ const Navbar = () => {
                   <li>
                     <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Link3
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/BlogDetails" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      BlogDetails
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/BlogList" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      BlogList
                     </RouterLink>
                   </li>
                 </ul>

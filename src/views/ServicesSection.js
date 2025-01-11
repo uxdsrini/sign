@@ -18,7 +18,7 @@ export default function ServicesSection() {
     ]
   
     return (
-      <section id='services' className="max-w-7xl mx-2 md:mx-auto px-4 py-20 text-gray-900 bg-pattern rounded-3xl">
+      <section id='servicessection' className="max-w-7xl mx-2 md:mx-auto px-4 py-20 text-gray-900 bg-pattern rounded-3xl">
         <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-16">
           Apps, websites,<br />
           logos & more
