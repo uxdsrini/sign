@@ -45,14 +45,9 @@ export default function PricingSection() {
           </div>
 
           <div className="grid grid-flow-row auto-rows-max md:auto-rows-min">
-            <div className="hidden md:flex mx-auto"> {/* Hidden on mobile, flex on medium screens and up */}
-              <div className="text-left mr-8 sm:py-2">
-                <h4 className="text-gray-900">For USA</h4>
-                <div className="text-4xl font-bold text-black">$1,800<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">$3,600/m</span></div>
-              </div>
-            
-              <div className="text-left sm:py-2 py-4">
-                <h4 className="text-gray-900">For India</h4>
+            <div className="hidden md:flex mx-auto"> 
+              <div className="text-left sm:py-2 py-4 ">
+                <h4 className="text-gray-900 text-center">For India</h4>
                 <div className="text-4xl font-bold text-black">₹40,499<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">₹80,999/m</span></div>
               </div>
             </div>

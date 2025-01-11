@@ -9,12 +9,12 @@ const Navbar = () => {
       <nav id='home' className="bg-black 2xl rounded-full px-6 py-4 flex justify-between items-center shadow-lg mx-2 mt-6 sticky top">
         {/* Logo */}
         <div className="flex rounded-full items-center bg-gradient-to-r from-yellow-500 to-yellow-600">
-          <a href='' target='_blank'><div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
+          <div className="w-12 h-12 bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent rounded-full flex items-center justify-start pl-3 gap-4">
           <img src={signjoy} alt="Signjoy Logo" className="w-6 h-6" />
           <span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-              Signjoy
+
             </span>
-          </div></a>
+          </div>
           
         </div>
         <ul>
