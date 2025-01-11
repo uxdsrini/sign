@@ -60,7 +60,7 @@ const Navbar = () => {
               duration={500}
               className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
             >
-              Work
+              Services
             </Link>
           </li>
           <li>
@@ -89,7 +89,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
                 className="flex cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
               >
-                Shop 
+                Works 
                 <span className='pt-1'><svg class="-mr-1 size-5 text-black hover:text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
         <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
       </svg></span>
