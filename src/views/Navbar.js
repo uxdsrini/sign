@@ -95,7 +95,7 @@ const Navbar = () => {
       </svg></span>
               </button>
               {isDropdownOpen && (
-                <ul className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
+                <ul className="absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none">
                   <li>
                     <RouterLink to="/Services" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Services
@@ -109,6 +109,11 @@ const Navbar = () => {
                   <li>
                     <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
                       Shop
+                    </RouterLink>
+                  </li>
+                  <li>
+                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Books
                     </RouterLink>
                   </li>
                 </ul>
