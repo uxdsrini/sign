@@ -103,12 +103,12 @@ const Navbar = () => {
                   </li>
                   <li>
                     <RouterLink to="/Link2" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link2
+                      Blog
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link3
+                      Shop
                     </RouterLink>
                   </li>
                 </ul>
