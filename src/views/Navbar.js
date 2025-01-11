@@ -102,13 +102,8 @@ const Navbar = () => {
                     </RouterLink>
                   </li>
                   <li>
-                    <RouterLink to="/BlogDetails" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      BlogDetail
-                    </RouterLink>
-                  </li>
-                  <li>
                     <RouterLink to="/BlogList" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      BlogList
+                      Blog
                     </RouterLink>
                   </li>
                 </ul>

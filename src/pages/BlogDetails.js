@@ -15,7 +15,7 @@ export const BlogDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Blog post not found</h1>
-          <Link to="/blog" className="text-blue-600 hover:text-blue-800">
+          <Link to="/blog" className="text-orange-600 hover:text-orange-800">
             Return to blog list
           </Link>
         </div>
@@ -28,7 +28,7 @@ export const BlogDetail = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Link
           to="/BlogList"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-8"
+          className="inline-flex items-center text-orange-600 hover:text-orange-800 mb-8"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to blog list
@@ -42,7 +42,7 @@ export const BlogDetail = () => {
           />
           
           <div className="flex flex-wrap items-center gap-4 mb-6">
-            <span className="flex items-center text-blue-600 font-medium px-3 py-1 bg-blue-50 rounded-full">
+            <span className="flex items-center text-orange-600 font-medium px-3 py-1 bg-orange-50 rounded-full">
               <Tag className="w-4 h-4 mr-1" />
               {post.category}
             </span>

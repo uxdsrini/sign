@@ -13,7 +13,7 @@ export const BlogCard = ({ post }) => {
         />
         <div className="p-6">
           <div className="flex items-center gap-4 mb-3">
-            <span className="text-sm text-blue-600 font-medium px-3 py-1 bg-blue-50 rounded-full">
+            <span className="text-sm text-orange-600 font-medium px-3 py-1 bg-orange-50 rounded-full">
               {post.category}
             </span>
             <div className="flex items-center text-gray-500 text-sm">
