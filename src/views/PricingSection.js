@@ -48,15 +48,13 @@ export default function PricingSection() {
             <div className="hidden md:flex mx-auto"> 
               <div className="text-left sm:py-2 py-4 ">
                 <h4 className="text-gray-900 text-center">For India</h4>
-                <div className="text-4xl font-bold text-black">₹40,499<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">₹80,999/m</span></div>
+                <div className="text-4xl font-bold text-black text-center">₹40,499<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">₹80,999/m</span></div>
               </div>
             </div>
             {/* Mobile view */}
             <div className="md:hidden">
-              <h4 className="text-gray-900">For USA</h4>
-              <div className="text-4xl font-bold text-black">$1,800<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">$3,600/m</span></div>
-              <h4 className="text-gray-900">For India</h4>
-              <div className="text-4xl font-bold text-black">₹40,499<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">₹80,999/m</span></div>
+              <h4 className="text-gray-900 text-center">For India</h4>
+              <div className="text-4xl font-bold text-black text-center">₹40,499<span className="text-xl font-normal">/m</span><br/><span className="text-2xl font-bold text-black line-through">₹80,999/m</span></div>
             </div>
           </div>
           <p className="text-black text-center">

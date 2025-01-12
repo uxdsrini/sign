@@ -25,8 +25,9 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               className="cursor-pointer"
-            ><span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
-              Signjoy
+            >
+            <span className="text-2xl md:text-3xl font-bold font-poppins bg-gradient-to-r from-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+            <a href='/' className='cursor-pointer'>Signjoy</a>
             </span></Link>
           </div>
         </div>
@@ -35,12 +36,12 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center gap-6 text-white font-light">
           <li>
             <Link
-              to="howitServicess"
+              to="howitworks"
               smooth={true}
               duration={500}
               className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
             >
-              How it Servicess
+              How it Services
             </Link>
           </li>
           <li>
@@ -55,7 +56,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              to="services"
+              to="servicessection"
               smooth={true}
               duration={500}
               className="cursor-pointer py-2 px-4 hover:bg-gradient-to-r from-yellow-500 to-yellow-600 hover:rounded-full hover:px-4 hover:py-2 hover:text-gray-900"
@@ -198,29 +199,14 @@ const Navbar = () => {
               </button>
               {isDropdownOpen && (
                 <ul className="absolute right-0 left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white shadow-lg">
-                  <li>
-                    <RouterLink to="/services" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link1
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/Link2" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link2
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/Link3" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      Link3
-                    </RouterLink>
-                  </li>
-                  <li>
-                    <RouterLink to="/BlogDetails" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      BlogDetails
+                   <li>
+                    <RouterLink to="/ServicesPage" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
+                      Services List
                     </RouterLink>
                   </li>
                   <li>
                     <RouterLink to="/BlogList" className="block py-2 px-4 text-gray-900 hover:text-orange-600">
-                      BlogList
+                      Blog
                     </RouterLink>
                   </li>
                 </ul>
