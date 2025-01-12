@@ -1,14 +1,17 @@
 import React from 'react';
 import * as Icons from 'lucide-react';
-import Navbar from '../views/Navbar.js';
+import ServicesNav from '../views/ServicesNav.js';
 import Footer from '../views/Footer.js';
+import Header from '../views/Header.js';
+import {  Link } from 'react-router-dom';
+
       
                   
-function ServicesPage() {
+function ServicePage() {
   const services = [
     {
       icon: <Icons.Palette className="w-8 h-8 text-orange-500" />,
-      title: "Brand Identity",
+      title: "Band Identity",
       description: "Complete branding solutions including logo design, color palettes, typography, and brand guidelines that capture your unique identity.",
       features: ["Logo Design", "Brand Guidelines", "Color Schemes", "Typography Selection"]
     },
@@ -48,7 +51,8 @@ function ServicesPage() {
     
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Previous Hero Section remains unchanged */}
-      <Navbar />
+      <ServicesNav />
+      <Header />
       {/* Expanded Services Section */}
       <section className="px-4 py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -81,12 +85,26 @@ function ServicesPage() {
         </div>
       </section>
       <Footer />
-      
-
       {/* Rest of the sections remain unchanged */}
+      <footer className="py-6 md:py-0">
+            <div className="container flex flex-col mx-auto items-center justify-center gap-4 md:h-24 md:flex-row text-gray-900">
+              <p className="text-sm text-gray-400 font-light">
+                All rights reserved. © {new Date().getFullYear()} SignJoy By using this site, you agree to our{' '}
+                <span
+                
+                  className="text-blue-600 underline cursor-pointer text-sm"
+                >
+                  <Link to="/termsconditions">Terms & Conditions</Link>
+
+                  
+                </span>
+                
+              </p>
+            </div>
+          </footer>
     </div>
     
   );
 }
 
-export default ServicesPage;
+export default ServicePage;

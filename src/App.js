@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import Header from './views/Header';
 import Navbar from './views/Navbar';
-import Services from './views/Services';
+import Services from './views/ServicesSection';
 import HowItWorks from './views/Howitworks';
 import ScrollBar from './views/ScrollBar';
 import FAQSection from './views/FAQSection';
@@ -11,9 +11,11 @@ import SocialProfile from './views/Social';
 import Benifits from './views/FeatureGrid';
 import CtaSection from './views/CtaSection';
 import PricingSection from './views/PricingSection';
-import Link1 from './pages/Services.js';
 import Footer from './views/Footer.js';
 import TermsAndConditions from './pages/TermsConditions.js';
+import {BlogList}   from './pages/BlogList';
+import { BlogDetail } from './pages/BlogDetails';
+import ServicePage from './pages/ServicesPage';
 
 // Navigation Component
 const Navigation = () => {
@@ -32,7 +34,7 @@ const Navigation = () => {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
                   <Link
-                    to="/services"
+                    to="/ServicesList"
                     className="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white"
                     onClick={() => setIsDropdownOpen(false)}
                   >
@@ -66,8 +68,10 @@ function App() {
        
           <Navigation />
           <Routes>
-            <Route path="/services" element={<Link1 />} />
+            <Route path="/servicespage" element={<ServicePage />} />
             <Route path="/termsconditions" element={<TermsAndConditions />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
+                        <Route path="/bloglist" element={<BlogList />} />
             <Route
               path="/"
               element={
