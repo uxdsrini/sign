@@ -5,6 +5,8 @@ import Footer from '../views/Footer.js';
 import Header from '../views/Header.js';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import PricingSection from '../views/PricingSection.js';
+
 
       
                   
@@ -92,6 +94,7 @@ function ServicePage() {
           </div>
         </div>
       </section>
+      <PricingSection />
       <Footer />
       {/* Rest of the sections remain unchanged */}
       <footer className="py-6 md:py-0">
