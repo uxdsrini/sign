@@ -49,6 +49,7 @@ export const blogs = [
       readTime: "6 min read",
       imageUrl: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?auto=format&fit=crop&w=1200&q=80",
       category: "CSS"
-    }
+    },
+
   ];
   
