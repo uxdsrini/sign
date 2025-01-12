@@ -33,7 +33,6 @@ export const BlogDetail = () => {
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to blog list
         </Link>
-        
         <article>
           <img
             src={post.imageUrl}

@@ -3,7 +3,8 @@ import * as Icons from 'lucide-react';
 import ServicesNav from '../views/ServicesNav.js';
 import Footer from '../views/Footer.js';
 import Header from '../views/Header.js';
-import {  Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 
       
                   
@@ -52,6 +53,13 @@ function ServicePage() {
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Previous Hero Section remains unchanged */}
       <ServicesNav />
+      <Link
+          to="/"
+          className="inline-flex mt-4 items-center text-orange-600 hover:text-orange-800 mb-4 mx-4 hover:text-orange-800"
+        >
+          <ArrowLeft className="w-4 h-4 mr-2" />
+          Back to Home
+        </Link>
       <Header />
       {/* Expanded Services Section */}
       <section className="px-4 py-20 bg-gray-50">
