@@ -21,12 +21,12 @@ export default function ScrollingText() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const text = " Happy New Year 2025 * 50% OFF * ";
+  const text = " Ikonova * Digital Opulent * Rootcasmo * Apaar * ";
   // Repeat the text to ensure smooth scrolling
   const repeatedText = Array(20).fill(text).join('');
 
   return (
-    <div className="text-ellipsis w-full overflow-hidden bg-gradient-to-r from-[#004D40] to-[#8BC34A] -rotate-2 scale-110">
+    <div className="text-ellipsis w-full overflow-hidden bg-gradient-to-r from-[#004D40] to-[#8BC34A]  scale-110 my-12">
       <div
         ref={containerRef}
         className="flex whitespace-nowrap py-6 overflow-x-hidden"
