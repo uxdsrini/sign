@@ -1,6 +1,5 @@
 import React from 'react';
 import { ClipboardCheckIcon, LightningBoltIcon, CashIcon, SparklesIcon, ChartBarIcon, LockClosedIcon } from '@heroicons/react/outline';
-import AnimatedSection from '../../components/AnimatedSection'; // Corrected path
 
 const features = [
   {
@@ -37,11 +36,11 @@ const features = [
 
 const FeatureGrid = () => {
   return (
-    <AnimatedSection animationType="scaleUp">
-      <div id='benifits' className="mt-8 mb-8 bg-white dark:bg-gray-900 flex items-center justify-center">
+    <>
+      <div id='benifits' className="mt-8 mb-8 bg-white flex items-center justify-center">
         <div className="text-center">
-        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-gray-900 dark:text-gray-100">Member advantages</h2>
-        <div className="text-lg text-gray-600 dark:text-gray-300">Benefits so impressive, you’ll never need to look elsewhere for your design needs. Seriously.</div>
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-gray-900">Member advantages</h2>
+        <div className="text-lg text-gray-600">Benefits so impressive, you’ll never need to look elsewhere for your design needs. Seriously.</div>
         
         </div>
       </div>
@@ -50,7 +49,7 @@ const FeatureGrid = () => {
         {features.map((feature, index) => (
           <div
             key={index}
-            className="text-gray-900 hover:shadow-xl p-6 hover:shadow-gray-500 dark:hover:shadow-gray-700 rounded-lg text-center flex flex-col items-center bg-gradient-to-r from-purple-500 to-pink-500"
+            className="text-gray-900 hover:shadow-xl p-6 hover:shadow-gray-500 rounded-lg text-center flex flex-col items-center bg-gradient-to-r from-purple-500 to-pink-500"
           > 
             <div className="text-4xl">{feature.icon}</div>
             <h3 className="text-white font-semibold mb-2 text-lg font-medium">{feature.title}</h3>
@@ -58,7 +57,7 @@ const FeatureGrid = () => {
           </div>
         ))}
       </div>
-    </AnimatedSection>
+    </>
   );
 };
 

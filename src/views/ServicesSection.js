@@ -1,5 +1,3 @@
-import AnimatedSection from "../../components/AnimatedSection"; // Corrected path
-
 export default function ServicesSection() {
     const services = [
       { name: 'Landing pages', color: 'bg-[#FF9ED8]' },
@@ -20,36 +18,34 @@ export default function ServicesSection() {
     ]
   
     return (
-      <AnimatedSection animationType="fadeInLeft">
-        <section id='servicessection' className="max-w-7xl mx-2 md:mx-auto px-4 py-20 text-gray-900 dark:text-gray-100 bg-pattern rounded-3xl">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-16">
-            Apps, websites,<br />
-            logos & more
-          </h2>
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {services.map((service) => (
-              <div
-                key={service.name}
-                className={`${service.color} text-white px-8 py-4 rounded-full text-lg md:text-xl font-light`}
-              >
-                {service.name}
-              </div>
-            ))}
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4 mt-4 ">
-            {moreServices.map((service) => (
-              <div
-                key={service.name}
-                className={`${service.color}  text-white px-8 py-4 rounded-full text-lg md:text-xl font-light`}
-              >
-                {service.name}
-              </div>
-            ))}
-          </div>
-        </section>
-      </AnimatedSection>
+      <section id='servicessection' className="max-w-7xl mx-2 md:mx-auto px-4 py-20 text-gray-900 bg-pattern rounded-3xl">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-center mb-16">
+          Apps, websites,<br />
+          logos & more
+        </h2>
+        
+        <div className="flex flex-wrap justify-center gap-4">
+          {services.map((service) => (
+            <div
+              key={service.name}
+              className={`${service.color} text-white px-8 py-4 rounded-full text-lg md:text-xl font-light`}
+            >
+              {service.name}
+            </div>
+          ))}
+        </div>
+        
+        <div className="flex flex-wrap justify-center gap-4 mt-4 ">
+          {moreServices.map((service) => (
+            <div
+              key={service.name}
+              className={`${service.color}  text-white px-8 py-4 rounded-full text-lg md:text-xl font-light`}
+            >
+              {service.name}
+            </div>
+          ))}
+        </div>
+      </section>
     )
   }
   
