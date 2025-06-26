@@ -18,3 +18,24 @@
     background-image: url('./assets/images/pattern-bg.png');
     background-repeat: repeat;
 }
+
+/* Default light mode styles */
+body {
+    background-color: #ffffff; /* White background */
+    color: #1a202c; /* Dark gray text */
+  }
+
+  /* Dark mode styles */
+  .dark body {
+    background-color: #1a202c; /* Dark gray background */
+    color: #e2e8f0; /* Light gray text */
+  }
+
+  /* Ensure links and other elements also adapt */
+  .dark a {
+    color: #63b3ed; /* Light blue links in dark mode */
+  }
+
+  .dark a:hover {
+    color: #90cdf4; /* Lighter blue on hover in dark mode */
+  }
