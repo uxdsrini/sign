@@ -1,6 +1,7 @@
 import { Link } from 'react-scroll';
 import { Instagram, Facebook, Linkedin, Contact, ArrowUp } from 'lucide-react';
 import signjoy from '../assets/images/logo512.png';
+import AnimatedSection from '../../components/AnimatedSection'; // Corrected path
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -8,10 +9,11 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black text-white p-12 mb-4 mx-2 mx-4 justify-between rounded-3xl relative py-12">
-      <div className="mx-auto px-4">
-        <div className="flex flex-col items-start md:items-center justify-between gap-8 mx-auto">
-          {/* Logo and Company Name */}
+    <AnimatedSection animationType="fadeInUp">
+      <footer className="bg-black text-white p-12 mb-4 mx-2 mx-4 justify-between rounded-3xl relative py-12">
+        <div className="mx-auto px-4">
+          <div className="flex flex-col items-start md:items-center justify-between gap-8 mx-auto">
+            {/* Logo and Company Name */}
           <div className="flex flex-col items-center mx-auto">
             <span className="flex items-center justify-center gap-2 md:gap-2 mb-2">
               <img
@@ -149,6 +151,6 @@ export default function Footer() {
         <ArrowUp className="w-6 h-6" />
       </button>
     </footer>
-    
+    </AnimatedSection>
   );
 }
