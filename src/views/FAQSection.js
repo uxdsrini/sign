@@ -1,7 +1,6 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import AnimatedSection from "../../components/AnimatedSection"; // Corrected path
 import {
   Accordion,
   AccordionContent,
@@ -73,31 +72,31 @@ export default function FAQSection() {
   ];
 
   return (
-    <AnimatedSection animationType="fadeInLeft">
-      <section id='faq' className="min-h-screen bg-[#FAF9F6] dark:bg-gray-800 w-full py-20">
-        <div className="max-w-3xl text-gray-900 dark:text-gray-100 mx-auto px-4 ">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
-            FAQ's
-          </h2>
-          <Accordion type="single" collapsible className="space-y-6">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-none"
-              >
-                <AccordionTrigger className="flex text-left justify-between py-4 text-sm font-medium hover:no-underline text-gray-900 dark:text-gray-100">
-                  {faq.question}
-                  <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />
-                </AccordionTrigger>
-                <AccordionContent className="text-sm text-left leading-relaxed text-gray-600 dark:text-gray-300 pb-4">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
-    </AnimatedSection>
+
+    <section id='faq' className="min-h-screen bg-[#FAF9F6] w-full py-20">
+
+<div className="max-w-3xl text-gray-900 mx-auto px-4 ">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-16">
+          FAQ's
+        </h2>
+        <Accordion type="single" collapsible className="space-y-6">
+          {faqs.map((faq, index) => (
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              className="border-none"
+            >
+              <AccordionTrigger className="flex text-left justify-between py-4 text-sm font-medium hover:no-underline">
+                {faq.question}
+                <ChevronDown className="h-6 w-6 shrink-0 transition-transform duration-200" />
+              </AccordionTrigger>
+              <AccordionContent className="text-sm text-left leading-relaxed text-gray-600 pb-4">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
   );
 }
